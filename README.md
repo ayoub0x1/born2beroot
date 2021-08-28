@@ -44,6 +44,16 @@
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
 
+### What-is-a-Virtual Machine?
+### How-do-Virtual-Machines-work?
+### What-is-LVM?
+### What-is-AppArmor?
+### What-is-the-difference-between-Apt-and-Aptitute?
+### How-to-use-SSH?
+### How-to-implement-UFW-with-SSH?
+### What-is-ron-and-what-is-wall?
+
+
 ## Installation
 At the time of writing, the latest stable version of [Debian](https://www.debian.org) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* [here](https://youtu.be/2w-2MX5QrQw).
 
