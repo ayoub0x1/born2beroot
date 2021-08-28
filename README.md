@@ -41,6 +41,8 @@
        - [Step 1: Installing & Configuring FTP](#step-1-installing--configuring-ftp)
        - [Step 2: Connecting to Server via FTP](#step-2-connecting-to-server-via-ftp)
 
+9. [evalknowledge.txt](#evalknowledge.txt)
+
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
 
@@ -620,3 +622,9 @@ FTP into your virtual machine via `ftp <ip-address>`.
 $ ftp <ip-address>
 ```
 Terminate FTP session at any time via `CTRL + D`.
+
+## Evalknowledge.txt
+    
+Little Q&A from Subject and whattocheck as evaluator. You can find it in this repository.
+
+I think it's done for now. I won't make "full guide with bonus part" just because you can easly find it in another B2BR repo. I highly recommend repeating the installation process several times, if possible, in order to remember and understand everything well. Especially if this is your first time working both Linux and a virtual machine.
