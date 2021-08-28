@@ -335,7 +335,7 @@ $ sudo crontab -u root -l
 ```
 ## Monitoring
 
-you have to create a simple script called monitoring.sh It must be developed in bash.
+you have to create a simple script called monitoring.sh It must be developed in bash.<br/>
 At server startup, the script will display some information (listed below) on all ter- minals every 10 minutes (take a look at wall). The banner is optional. No error must be visible.
 Your script must always be able to display the following information:
 • The architecture of your operating system and its kernel version.
