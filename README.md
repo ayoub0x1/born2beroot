@@ -335,7 +335,7 @@ $ sudo crontab -u root -l
 ```
 ## Monitoring
 
-You have to create a simple script called monitoring.sh It must be developed in bash.
+You have to create a simple script called `monitoring.sh` It must be developed in bash.
 At server startup, the script will display some information (listed below) on all ter- minals every 10 minutes (take a look at wall). The banner is optional. No error must be visible.
 Your script must always be able to display the following information:<br/>
 • The architecture of your operating system and its kernel version.<br/>
@@ -350,7 +350,9 @@ Your script must always be able to display the following information:<br/>
 • The number of users using the server.<br/>
 • The IPv4 address of your server and its MAC (Media Access Control) address.<br/>
 • The number of commands executed with the sudo program.
-  
+
+ You can find the script `monitoring.sh` in this repository.
+
 ## Bonus
 
 ### #1: Installation
