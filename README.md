@@ -2,6 +2,14 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
+    - [What is a Virtual Machine?]
+    - [How do Virtual Machines work?]
+    - [What is LVM?]
+    - [What is AppArmor?]
+    - [What is the difference between Apt and Aptitute?]
+    - [How to use SSH?]
+    - [How to implement UFW with SSH?]
+    - [What is cron and what is wall?]
 2. [Installation](#installation)
 3. [*sudo*](#sudo)
     - [Step 1: Installing *sudo*](#step-1-installing-sudo)
