@@ -34,6 +34,7 @@
        - [Step 2: Connecting to Server via FTP](#step-2-connecting-to-server-via-ftp)
 
 ## Introduction
+You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
 
 ## Installation
 At the time of writing, the latest stable version of [Debian](https://www.debian.org) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* [here](https://youtu.be/2w-2MX5QrQw).
