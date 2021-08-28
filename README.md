@@ -20,8 +20,7 @@
     - [Step 3: Creating a New Group](#step-3-creating-a-new-group)
 6. [*cron*](#cron)
     - [Setting Up a *cron* Job](#setting-up-a-cron-job)
-7. [Monitoring]
-    - [create a simple script called monitoring.sh](#monitoring)
+7. [Monitoring](#monitoring)
 8. [Bonus](#bonus)
     - [Installation](#1-installation)
     - [Linux Lighttpd MariaDB PHP *(LLMP)* Stack](#2-linux-lighttpd-mariadb-php-llmp-stack)
