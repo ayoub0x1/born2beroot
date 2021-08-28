@@ -348,7 +348,8 @@ Your script must always be able to display the following information:<br/>
 • Whether LVM is active or not.<br/>
 • The number of active connections.<br/>
 • The number of users using the server.<br/>
-• The IPv4 address of your server and its MAC (Media Access Control) address. • The number of commands executed with the sudo program.
+• The IPv4 address of your server and its MAC (Media Access Control) address.<br/>
+• The number of commands executed with the sudo program.
   
 ## Bonus
 
