@@ -1,7 +1,7 @@
 # 42cursus - Born2beroot
 
 ## Table of Contents
-1. [Introduction](#Introduction)
+1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [*sudo*](#sudo)
     - [Step 1: Installing *sudo*](#step-1-installing-sudo)
