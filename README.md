@@ -44,7 +44,7 @@
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
 
-### What is a Virtual Machine? 
+### What-is-a-Virtual-Machine? 
 ### How-do-Virtual-Machines-work?
 ### What-is-LVM?
 ### What-is-AppArmor?
