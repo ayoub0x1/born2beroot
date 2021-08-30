@@ -3,13 +3,13 @@
 ## Table of Contents
 1. [Introduction](#introduction)
     - [What is a Virtual Machine?](#Virtual-Machine)
-    - [How do Virtual Machines work?](#How-do-Virtual-Machines-work?)
+    - [How do Virtual Machines work?](#Virtual-Machines-work)
     - [What is LVM?](#What-is-LVM?)
     - [What is AppArmor?](#What-is-AppArmor?)
-    - [What is the difference between Apt and Aptitute?](#What-is-the-difference-between-Apt-and-Aptitute?)
-    - [How to use SSH?](##How-to-use-SSH?)
-    - [How to implement UFW with SSH?](#How-to-implement-UFW-with-SSH?)
-    - [What is cron and what is wall?](#What-is-cron-and-what-is-wall?)
+    - [What is the difference between Apt and Aptitute?](#Apt-and-Aptitute)
+    - [How to use SSH?](#How-to-use-SSH?)
+    - [How to implement UFW with SSH?](#UFW-with-SSH)
+    - [What is cron and what is wall?](#cron)
 2. [Installation](#installation)
 3. [*sudo*](#sudo)
     - [Step 1: Installing *sudo*](#step-1-installing-sudo)
@@ -41,7 +41,7 @@
        - [Step 1: Installing & Configuring FTP](#step-1-installing--configuring-ftp)
        - [Step 2: Connecting to Server via FTP](#step-2-connecting-to-server-via-ftp)
 
-9. [evalknowledge.txt](#evalknowledge.txt)
+9. [evalknowledge.txt](#evalknowledge)
 
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
@@ -52,7 +52,7 @@ The devices that provide the hardware resources are called **host machines or ho
 <br>
 There can be multiple virtual machines on the same host and each of these will be isolated from the rest of the system. Thanks to this, we can run different operating systems on our machine. For each virtual machine, we can run a different operating system distribution. Each of these operating systems will behave as if they were hosted on a physical device, so we will have the same experience when using an OS on a physical machine and on a virtual machine.
 
-### <a name="makefile">How do Virtual Machines work?</a>
+### <a name="Virtual-Machines-work">How do Virtual Machines work?</a>
 Virtualization allow us share a system with multiple virtual environments. The hypervisor manages the hardware system and separate the physical resources from the virtual environments. **The resources are managed followitn the needs, from the host to the guests.** When an user from a VM do a task that requires additional resources from the physical environment, the hypervisor manages the request so that the guest OS could access the resources of the physical environment.<br>
 Once we know how they work, it is a good idea to see all the advantages we get from using virtual machines:
 <ul>
@@ -72,15 +72,15 @@ By using LVM, **we can expand the storage of any partition** (now known as a log
    <li><b>Logical volume (LV):</b> these devices will be the ones we will use to create file systems, swaps, virtual machines, etc. If the VG is the storage disk, the LV are the partitions that are made on this disk.</li>
 </ul>
 
-### <a name="makefile">What is AppArmor?</a>
+### <a name="What-is-AppArmor?">What is AppArmor?</a>
 AppArmor provides **Mandatory Access Control (MAC) security**. In fact, **AppAmor allows the system administrator to restrict the actions that processes can perform**. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.<br>
 In AppArmor, **processes are restricted by profiles**. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
 
-### <a name="makefile">What is the difference between Apt and Aptitute?</a>
+### <a name="Apt-and-Aptitute">What is the difference between Apt and Aptitute?</a>
 In Debian-based OS distributions, **the default package manager we can use is dpkg**. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, **APT (Advanced Package Tool)**, which is a tool that uses dpkg, **can be used to install all the necessary dependencies when installing a program**. So now we can install a useful program with a single command.<br>
 APT can work with different back-ends and fron-ends to make use of its services. One of them is **apt-get**, which **allows us to install and remove packages**. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, **apt-get and apt-cache are used by apt**. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. **Aptitude also does better control of dependencies**, allowing the user to choose between different dependencies when installing a program.
 
-### <a name="makefile">How to use SSH?</a>
+### <a name="How-to-use-SSH?">How to use SSH?</a>
 SSH or **Secure Shell** is a **remote administration protocol that allows users to control and modify their servers** over the Internet thanks to an authentication mechanism. Provides a mechanism to authenticate a user remotely, transfer data from the client to the host, and return a response to the request made by the client.<br>
 SSH was created as an alternative to Telnet, which does not encrypt the information that is sent. **SSH uses encryption techniques** to ensure that all client-to-host and host-to-client communications are done in encrypted form. One of the advantages of SSH is that a user using Linux or MacOS can use SSH on their server to communicate with it remotely through their computer's terminal. Once authenticated, that user will be able to use the terminal to work on the server.<br><br>
 The command used to connect to a server with ssh is:
@@ -94,10 +94,10 @@ There are three different techniques that SSH uses to encrypt:
  <li><b>Hashing:</b> another form of cryptography used by SSH. Hash functions are made in a way that they don't need to be decrypted. If a client has the correct input, they can create a cryptographic hash and SSH will check if both hashes are the same.</li>
 </ul>
 
-### <a name="makefile">How to implement UFW with SSH</a>
+### <a name="UFW-with-SSH">How to implement UFW with SSH</a>
 **UFW (Uncomplicated Firewall)** is a software application responsible for ensuring that the system administrator can **manage iptables in a simple way**. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device **(netfilter)** without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices. 
 
-### <a name="makefile">What is cron and what is wall?</a>
+### <a name="cron">What is cron and what is wall?</a>
 Once we know a little more about how to build a server inside a Virtual Machine (remember that you also have to look in other pages apart from this README), we will see two commands that will be very helpful in case of being system administrators. These commands are:
 - **Cron:** Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
 - **Wall:** command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall. 
@@ -623,7 +623,7 @@ $ ftp <ip-address>
 ```
 Terminate FTP session at any time via `CTRL + D`.
 
-## Evalknowledge.txt
+## <a name="evalknowledge">Evalknowledge.txt</a>
     
 Little Q&A from Subject and whattocheck as evaluator. You can find it in this repository.
 
