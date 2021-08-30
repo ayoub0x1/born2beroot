@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-    - [What is a Virtual Machine?](#What-is-a-Virtual-Machine?)
+    - [What is a Virtual Machine?](#Virtual-Machine)
     - [How do Virtual Machines work?](#How-do-Virtual-Machines-work?)
     - [What is LVM?](#What-is-LVM?)
     - [What is AppArmor?](#What-is-AppArmor?)
@@ -46,7 +46,7 @@
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
 
-### <a name="#What-is-a-Virtual Machine?">What is a Virtual Machine?</a>
+### <a name="Virtual-Machine">What is a Virtual Machine?</a>
 A virtual machine is a **software capable of installing an Operating System within itself, making the OS think that it is hosted on a real computer**. With virtual machines we can create virtual devices that will behave in the same way as physical devices, using their own CPU, memory, network interface and storage. This is possible because **the virtual machine is hosted on a physical device**, which is the one that provides the hardware resources to the VM. The software program that creates virtual machines is **the hypervisor**. The hypervisor is responsible for isolating the VM resources from the system hardware and making the necessary implementations so that the VM can use these resources.<br>
 The devices that provide the hardware resources are called **host machines or hosts**. The different virtual machines that can be assigned to a host are called **guests or guest machines**. The hypervisor uses a part of the host machine's CPU, storage, etc., and distributes them among the different VMs.<br>
 <br>
