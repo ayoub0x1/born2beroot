@@ -9,7 +9,7 @@
     - [What is the difference between Apt and Aptitute?](#Apt-and-Aptitute)
     - [How to use SSH?](#How-to-use-SSH?)
     - [How to implement UFW with SSH?](#UFW-with-SSH)
-    - [What is cron and what is wall?](#cron)
+    - [What is cron and what is wall?](#what-is-cron)
 2. [Installation](#installation)
 3. [*sudo*](#sudo)
     - [Step 1: Installing *sudo*](#step-1-installing-sudo)
@@ -97,7 +97,7 @@ There are three different techniques that SSH uses to encrypt:
 ### <a name="UFW-with-SSH">How to implement UFW with SSH</a>
 **UFW (Uncomplicated Firewall)** is a software application responsible for ensuring that the system administrator can **manage iptables in a simple way**. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device **(netfilter)** without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices. 
 
-### <a name="cron">What is cron and what is wall?</a>
+### <a name="what-is-cron">What is cron and what is wall?</a>
 Once we know a little more about how to build a server inside a Virtual Machine (remember that you also have to look in other pages apart from this README), we will see two commands that will be very helpful in case of being system administrators. These commands are:
 - **Cron:** Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
 - **Wall:** command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall. 
