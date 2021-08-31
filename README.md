@@ -638,8 +638,11 @@ You only have to turn in a signature.txt file at the root of your Git repository
 Then, retrieve the signature from the ".vdi" file (or ".qcow2 for UTM’users) of your virtual machine in sha1 format. Below are 4 command examples for a centos_serv.vdi file:
     
 • Windows: `certUtil -hashfile centos_serv.vdi sha1 `
+    
 • Linux: `sha1sum centos_serv.vdi`
+    
 • For Mac M1: `shasum Centos.utm/Images/disk-0.qcow2 `
+    
 • MacOS: `shasum centos_serv.vdi`
     
 This is an example of what kind of output you will get:
