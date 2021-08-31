@@ -633,7 +633,9 @@ You only have to turn in a signature.txt file at the root of your Git repository
     
 • Linux: `~/VirtualBox VMs/`
     
-• MacM1: `~/Library/Containers/com.utmapp.UTM/Data/Documents/ • MacOS: ~/VirtualBox VMs/`
+• MacM1: `~/Library/Containers/com.utmapp.UTM/Data/Documents/ `
+    
+• MacOS: ` ~/VirtualBox VMs/`
 
 Then, retrieve the signature from the ".vdi" file (or ".qcow2 for UTM’users) of your virtual machine in sha1 format. Below are 4 command examples for a centos_serv.vdi file:
     
