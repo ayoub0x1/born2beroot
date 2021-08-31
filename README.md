@@ -41,7 +41,7 @@
        - [Step 1: Installing & Configuring FTP](#step-1-installing--configuring-ftp)
        - [Step 2: Connecting to Server via FTP](#step-2-connecting-to-server-via-ftp)
 
-8. [Submission and peer-evaluation](#peereval)
+8. [Submission and peer-evaluation for 1337/42 Students](#peereval)
 
 9. [evalknowledge.txt](#evalknowledge)
 
@@ -625,7 +625,7 @@ $ ftp <ip-address>
 ```
 Terminate FTP session at any time via `CTRL + D`.
 
-## <a name="peereval">Submission and peer-evaluationt</a>
+## <a name="peereval">Submission and peer-evaluation for 1337/42 Students</a>
 
 You only have to turn in a signature.txt file at the root of your Git repository. You must paste in it the signature of your machine’s virtual disk. To get this signature, you first have to open the default installation folder (it is the folder where your VMs are saved):
  
