@@ -655,4 +655,4 @@ This is an example of what kind of output you will get:
     
 Little Q&A from Subject and whattocheck as evaluator. You can find it in this repository.
 
-I think it's done for now. I won't make "full guide with bonus part" just because you can easly find it in another B2BR repo. I highly recommend repeating the installation process several times, if possible, in order to remember and understand everything well. Especially if this is your first time working both Linux and a virtual machine.
+I think it's done for now. I highly recommend repeating the installation process several times, if possible, in order to remember and understand everything well. Especially if this is your first time working both Linux and a virtual machine.
