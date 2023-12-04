@@ -320,9 +320,9 @@ To set password minimum length to 10 characters, add below option to the above l
 ```
 minlen=10
 ```
-To require password to contain at least an uppercase character and a numeric character:
+To require password to contain at least an uppercase character. a numeric character and a lowecase character:
 ```
-ucredit=-1 dcredit=-1
+ucredit=-1 dcredit=-1 lcredit=-1
 ```
 To set a maximum of 3 consecutive identical characters:
 ```
